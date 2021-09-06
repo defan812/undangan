@@ -1,0 +1,19 @@
+{
+    "list" : [
+        {
+            "nama"      : "Sigit",
+            "alamat"    : "Sukoharjo",
+            "pesan"     : "Selamat ya sof, samawa"
+        },
+        {
+            "nama"      : "Ardi",
+            "alamat"    : "Solo",
+            "pesan"     : "Selamat ya sof, samawa"
+        },
+        {
+            "nama"      : "Firman",
+            "alamat"    : "Tangerang",
+            "pesan"     : "Selamat ya sof, samawa"
+        }
+    ]
+}
