@@ -6,6 +6,11 @@
 [ FONT ]*/
 
 @font-face {
+  font-family: Autumn-in-November;
+  src: url('../fonts/ubuntu/Autumn-in-November.ttf'); 
+}
+
+@font-face {
   font-family: Breetty-Regular;
   src: url('../fonts/ubuntu/Breetty-Regular.otf'); 
 }
@@ -190,7 +195,7 @@ iframe {
 
 .wrap-login100 {
   width: 400px;
-  background: #fff;
+  background: rgb(255, 219, 102);
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
@@ -210,20 +215,52 @@ iframe {
 }
 
 .login100-form-title {
-  font-family: Breetty-Regular;
+  font-family: Autumn-in-November;
   font-size: 30px;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: center;
 
   display: block;
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #fff;
-  padding-top: 50px;
-  padding-bottom: 39px;
+  background-color: rgb(255, 219, 102);
+  /* padding-top: 10px;
+  padding-bottom: 09px; */
+}
+.login101-form-title {
+  font-family: Ubuntu-Bold;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: center;
+
+  display: block;
+  /* position: absolute; */
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 219, 102);
+  /* padding-top: 10px;
+  padding-bottom: 09px; */
+}
+.login102-form-title {
+  font-family: Autumn-in-November;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: center;
+
+  display: block;
+  /* position: absolute; */
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 219, 102);
+  /* padding-top: 10px;
+  padding-bottom: 09px; */
 }
 
 /*------------------------------------------------------------------
@@ -323,7 +360,7 @@ iframe {
 }
 
 .login100-form-btn:hover {
-  background-color: #ffda6a;
+  background-color: rgb(255, 219, 102);
 }
 
 

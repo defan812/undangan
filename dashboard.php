@@ -32,18 +32,22 @@ $list = $list["list"];
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Baker - v2.2.1
-  * Template URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="">
+
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top header-transparent">
     <div class="container d-flex align-items-center">
+
+    <audio id="playAudio"autoplay loop>
+        <source src="sound/Di_Sepertiga_Malam.mp3">
+    </audio>
+
+    <div class="audio-button">
+      <button onclick="stopAudio()" type="button" class="btn btn-outline-danger small" id="stopButton"><i class="bx bx-volume-mute"></i></button>
+      <button onclick="playAudio()" type="button" class="btn btn-outline-primary small" id="playButton"><i class="bx bxs-volume-full"></i></button>
+    </div>
 
       <!-- <h1 class="logo mr-auto"><a href="index.html"><img src="assets/img/weding.png" class="img-fluid" alt=""></a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
@@ -112,7 +116,7 @@ $list = $list["list"];
               </div>
               <div class="member-info">
                 <h1 class="wedding">Rr. Desy Lindawati</h1>
-                <span>Putri Dari Suliman dan Sutinah</span>
+                <span>Putri Dari Bapak Suliman dan Ibu Sutinah</span>
                 <!-- <span>Ngebung Rt 003 / RW 002 Ngebung, Kalijambe, Sragen</span> -->
               </div>
             </div>
@@ -130,7 +134,7 @@ $list = $list["list"];
               </div>
               <div class="member-info">
                 <h1 class="wedding">Bg. Sofyan Ardi Wibowo</h1>
-                <span>Putra Dari Pariyo dan Wagiyem</span>
+                <span>Putra Dari Bapak Pariyo dan Ibu Wagiyem</span>
                 <!-- <span>Nanggulan Rt 002 / Rw 007 Gentan, Bendosari, Sukoharjo</span> -->
               </div>
             </div>
@@ -294,6 +298,36 @@ $list = $list["list"];
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/auto_scroll.js"></script>
+
+  <script>
+
+        $("#bukaTombol").click(function () {
+            $("#content").fadeIn(3000);
+            $('#bukaUndangan').modal("hide");
+            var x = document.getElementById("playAudio");
+            var y = document.getElementById("playButton");
+            var z = document.getElementById("stopButton");
+            x.play();
+            y.style.display = "none";
+            z.style.display = "block";
+        });
+
+    var x = document.getElementById("playAudio");
+        var y = document.getElementById("playButton");
+        var z = document.getElementById("stopButton");
+        z.style.display = "none";
+        function playAudio() {
+            x.play();
+            y.style.display = "none";
+            z.style.display = "block";
+        }
+
+        function stopAudio() {
+            x.pause();
+            y.style.display = "block";
+            z.style.display = "none";
+        }
+    </script>
 
 </body>
 

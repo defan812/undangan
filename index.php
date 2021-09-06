@@ -31,17 +31,26 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form p-l-55 p-r-55 p-t-100">
-					<span class="login100-form-title">
-						Wedding Invitations
+				<form class="login100-form validate-form">
+					<span class="login100-form-title mt-5">
+						Wedding Invitations </br>
 					</span>
+					<span class="login101-form-title mt-2">
+						Ahad, 17 Oktober 2021
+					</span>
+					
 					<div class="text-center">
-						<img src="assets/img/weding2.png" class="img-fluid mb-3" width="85%" alt="">
+						<img src="assets/img/weding2.png" class="img-fluid mb-3" width="65%" alt="">
 					</div>
+
+					<span class="login102-form-title mb-5">
+						Bapak / Ibu / Saudara </br>
+						Di Tempat
+					</span>
 
 					<div class="container-login100-form-btn mb-5">
 						<div class="col-md-8">
-							<a href="dashboard.php" class="login100-form-btn">
+							<a href="dashboard.php" id="bukaTombol" class="login100-form-btn">
 								Buka Undangan
 							</a>
 						</div>
