@@ -77,9 +77,17 @@ $list = $list["list"];
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center justify-content-center text-white">
     <div class="container position-relative">
-      <!-- <div class="col-md-4 col-12 d-flex align-items-center justify-content-center"> -->
-        <img src="assets/img/weding.png" class="img-fluid mb-3" width="15%" alt="">
-      <!-- </div> -->
+      <div class="row">
+        <div class="col-md-4 col-12 d-flex align-items-stretch  text-align-center">
+          
+        </div>
+        <div class="col-md-4 col-12 d-flex align-items-stretch  justify-content-center">
+          <img src="assets/img/weding.png" class="img-fluid mb-3" width="50%" alt="">
+        </div>
+        <div class="col-md-4 col-12 d-flex align-items-stretch  text-align-center">
+          
+        </div>
+      </div>
       <h1 class="mb-3">Wedding Invitation</h1>
       <p>Dan Allah menjadikan bagimu pasangan (suami atau istri) dari jenis kamu sendiri dan menjadikan anak dan cucu bagimu dari pasanganmu, serta memberimu rezeki dari yang baik. Mengapa mereka beriman kepada yang batil dan mengingkari nikmat Allah?</p>
       <p>QS. An Nahl ayat 72</p>
@@ -93,7 +101,18 @@ $list = $list["list"];
       <div class="container">
 
         <div class="section-title">
-          <h2> <img src="assets/img/salam.png" class="img-fluid mx-auto d-block" width="25%"></h2>
+        <div class="row">
+        <div class="col-md-4 col-12 d-flex align-items-stretch  text-align-center">
+          
+        </div>
+        <div class="col-md-4 col-12 d-flex align-items-stretch  justify-content-center">
+          <img src="assets/img/salam.png" class="img-fluid mb-3" width="50%" alt="">
+        </div>
+        <div class="col-md-4 col-12 d-flex align-items-stretch  text-align-center">
+          
+        </div>
+      </div>
+          <!-- <h2> <img src="assets/img/salam.png" class="img-fluid mx-auto d-block" width="25%"></h2> -->
           <h5 class="mb-3">Dengan memohon Ridho dan rahmat Allah SWT, kami bermaksud menyelenggarakan Akad Nikah dan Pernikahan kami yang InsyaAllah akan dilaksanakan pada :</h5>
           <h5> <b> Hari Ahad,17 Oktober 2021 </b> </h5>
           <h5> <b>Pukul : 09.00 WIB s/d Selesai </b></h5>
@@ -144,6 +163,38 @@ $list = $list["list"];
 
       </div>
     </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+
+      <div class="section-title text-white">
+        <h2>Amplop Digital</h2>
+      </div>
+
+        <div class="text-center justify-content-center">
+          <!-- <h3>Call To Action</h3> -->
+          <!--<p class="ucapan_thx"> Merupakan Suatu Kehormatan bagi kami apabila Bapak/Ibu/Saudara/i, berkenan hadir untuk memberikan doa restu kepada kedua mempelai. Atas kehadiran dan doa restu Bapak/ibu/sdaura/i kami ucapkan terima kasih</p> -->
+		  
+		    <p class="ucapan_thx"> Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. Dan jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi kado secara cashless.</p>
+          <img src="assets/img/font_footer.png" class="img-fluid " width="15%"></br></br>
+          <div class="row">
+            <div class="col-md-4 col-12 d-flex align-items-stretch  justify-content-center">
+              <img src="assets/img/qris_bca.png" class="img-fluid mb-3" width="50%" alt="">
+            </div>
+            <div class="col-md-4 col-12 d-flex align-items-stretch  justify-content-center">
+              
+            </div>
+            <div class="col-md-4 col-12 d-flex align-items-stretch  justify-content-center">
+              <img src="assets/img/qris_dana.png" class="img-fluid mb-3" width="50%" alt="">
+            </div>
+          </div>
+          <!-- <a class="cta-btn" href="#">Call To Action</a> -->
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+  </main><!-- End #main -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -233,14 +284,17 @@ $list = $list["list"];
     <section id="cta" class="cta">
       <div class="container">
 
-        <div class="text-center">
+        <div class="text-center justify-content-center">
           <!-- <h3>Call To Action</h3> -->
           <!--<p class="ucapan_thx"> Merupakan Suatu Kehormatan bagi kami apabila Bapak/Ibu/Saudara/i, berkenan hadir untuk memberikan doa restu kepada kedua mempelai. Atas kehadiran dan doa restu Bapak/ibu/sdaura/i kami ucapkan terima kasih</p> -->
 		  
-		  <p class="ucapan_thx"> Dikarenakan sedang dalam masa pandemi, tanpa mengurangi rasa hormat, diharapkan seluruh tamu dapat mengikuti protokol kesehatan yang dianjurkan oleh pemerintah</p>
+		    <p class="ucapan_thx"> Dikarenakan sedang dalam masa pandemi, tanpa mengurangi rasa hormat, diharapkan seluruh tamu dapat mengikuti protokol kesehatan yang dianjurkan oleh pemerintah</p>
           <img src="assets/img/font_footer.png" class="img-fluid " width="15%"></br></br>
-		  
-		   <img src="assets/img/corona.png" class="img-fluid " width="65%">
+        
+        <div class="col-md-12 col-12 d-flex">
+          <!-- <img src="assets/img/weding.png" class="img-fluid mb-3" width="50%" alt=""> -->
+          <img src="assets/img/corona.png" class="img-fluid " width="100%">
+        </div>
           <!-- <a class="cta-btn" href="#">Call To Action</a> -->
         </div>
 
