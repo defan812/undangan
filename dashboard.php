@@ -2,6 +2,32 @@
 $data = file_get_contents('assets/js/list.json');
 $list = json_decode($data, true);
 $list = $list["list"];
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') 
+{
+  if(empty($_POST['nama']))
+  {
+    header('Location: http://sofyan.test/dashboard.php');
+    exit();
+  }
+
+  if(file_exists('assets/js/list.json'))
+  {
+    $message = [
+      'nama' => $_POST['nama'],
+      'alamat' => $_POST['alamat'],
+      'pesan' => $_POST['pesan'],
+    ];
+
+    $list[] = $message;
+
+    if(file_put_contents('assets/js/list.json', json_encode(['list' => $list])))
+    {
+      header('Location: http://sofyan.test/dashboard.php');
+      exit();
+    }
+  }
+}
 ?>
 
 <!DOCTYPE html>
@@ -229,22 +255,23 @@ $list = $list["list"];
           </div>
 
           <div class="col-lg-6 mx-auto d-block">
-            <form id="myform" action="" type="post" role="form" class="php-email-form">
+            <form id="myform" action="http://sofyan.test/dashboard.php" method="POST" class="php-email-form">
               <h4>Isi Pesan Disini</h4>
               <div class="form-row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="nama" class="form-control" id="nama" placeholder="Nama" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="nama" class="form-control" id="nama" placeholder="Nama" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required/>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="text" class="form-control" name="alamat" id="alamat" placeholder="Alamat" data-msg="Please enter a valid email" />
+                  <input type="text" class="form-control" name="alamat" id="alamat" placeholder="Alamat" data-msg="Please enter a valid email" required/>
                 </div>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="pesan" rows="7" data-rule="required" data-msg="Please write something for us" placeholder="Pesan Buat Mempelai"></textarea>
+                <textarea class="form-control" name="pesan" rows="7" data-rule="required" data-msg="Please write something for us" placeholder="Pesan Buat Mempelai" required></textarea>
               </div>
               <div class="text-center submit">
                 <!-- <button class="btn btn-outline-warning mt-3" type="submit" onClick='inputdata()'>Send Message</button> -->
-                <input type="submit" class="btn btn-outline-warning mt-3" id="bth" name="btn" value="Send Message">
+                <!-- <input type="submit" class="btn btn-outline-warning mt-3" id="bth" name="btn" value="Send Message"> -->
+                <button type="submit" class="btn btn-outline-warning mt-3">Kirim Pesan</button>
               </div>
             </form>
 
