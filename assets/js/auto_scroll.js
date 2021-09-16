@@ -33,16 +33,3 @@ $(document).ready(function() {
     });
 });
 
-function myFunction() {
-    var copyText = "1530476321";
-    copyText.select();
-    document.execCommand("copy");
-
-    var tooltip = document.getElementById("myTooltip");
-    tooltip.innerHTML = "Tersalin" + copyText.value;
-}
-
-function outFunc(){
-    var tooltip = document.getElementById("myTooltip");
-    tooltip.innerHTML = "Salin Rekening" + copyText.value;
-}
