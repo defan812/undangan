@@ -1,4 +1,5 @@
 <?php
+$url  = "http://localhost:8080/wedding/";
 $data = file_get_contents('assets/js/list.json');
 $list = json_decode($data, true);
 $list = $list["list"];
@@ -7,7 +8,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 {
   if(empty($_POST['nama']))
   {
-    header('Location: http://sofyan.test/dashboard.php');
+    header('Location: ' . $url. 'dashboard.php');
     exit();
   }
 
@@ -23,7 +24,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 
     if(file_put_contents('assets/js/list.json', json_encode(['list' => $list])))
     {
-      header('Location: http://sofyan.test/dashboard.php');
+      header('Location: ' . $url. 'dashboard.php');
       exit();
     }
   }
@@ -43,7 +44,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 
   <!-- Favicons -->
   <link href="assets/img/favicon.ico" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -75,7 +76,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
       <button onclick="playAudio()" type="button" class="btn btn-outline-primary small" id="playButton"><i class="bx bxs-volume-full"></i></button>
     </div>
 
-      <!-- <h1 class="logo mr-auto"><a href="index.html"><img src="assets/img/weding.png" class="img-fluid" alt=""></a></h1> -->
+      <!-- <h1 class="logo mr-auto"><a href="index.html"><img src="assets/img/weding.webp" class="img-fluid" alt=""></a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
       <a href="#hero" class="logo mr-auto"><img src=""></a>
 
@@ -108,7 +109,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
           
         </div>
         <div class="col-md-4 col-12 d-flex align-items-stretch  justify-content-center">
-          <img src="assets/img/weding.png" class="img-fluid mb-3" width="50%" alt="">
+          <img src="assets/img/weding.webp" class="img-fluid mb-3" width="50%" alt="">
         </div>
         <div class="col-md-4 col-12 d-flex align-items-stretch  text-align-center">
           
@@ -132,13 +133,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
           
         </div>
         <div class="col-md-4 col-12 d-flex align-items-stretch  justify-content-center">
-          <img src="assets/img/salam.png" class="img-fluid mb-3" width="50%" alt="">
+          <img src="assets/img/salam.webp" class="img-fluid mb-3" width="50%" alt="">
         </div>
         <div class="col-md-4 col-12 d-flex align-items-stretch  text-align-center">
           
         </div>
       </div>
-          <!-- <h2> <img src="assets/img/salam.png" class="img-fluid mx-auto d-block" width="25%"></h2> -->
+          <!-- <h2> <img src="assets/img/salam.webp" class="img-fluid mx-auto d-block" width="25%"></h2> -->
           <h5 class="mb-3">Dengan memohon Ridho dan rahmat Allah SWT, kami bermaksud menyelenggarakan Akad Nikah dan Pernikahan kami yang InsyaAllah akan dilaksanakan pada :</h5>
           <h5> <b> Hari Ahad,17 Oktober 2021 </b> </h5>
           <h5> <b>Pukul : 09.00 WIB s/d Selesai </b></h5>
@@ -151,7 +152,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
           <div class="col-lg-4 col-md-8 d-flex align-items-stretch mx-auto d-block" data-aos="zoom-in" data-aos-delay="100">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/ds.png" class="img-fluid " alt="">
+                <img src="assets/img/ds.webp" class="img-fluid " alt="">
                 <div class="social">
                   <!-- <a href=""><i class="icofont-twitter"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a> -->
@@ -169,7 +170,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
           <div class="col-lg-4 col-md-8 d-flex align-items-stretch mx-auto d-block" data-aos="zoom-in" data-aos-delay="100">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/sd.png" class="img-fluid" alt="">
+                <img src="assets/img/sd.webp" class="img-fluid" alt="">
                 <div class="social">
                   <!-- <a href=""><i class="icofont-twitter"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a> -->
@@ -198,25 +199,55 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
         <h2>Amplop Digital</h2>
       </div>
 
-        <div class="text-center justify-content-center">
+        <div class="text-center">
           <!-- <h3>Call To Action</h3> -->
           <!--<p class="ucapan_thx"> Merupakan Suatu Kehormatan bagi kami apabila Bapak/Ibu/Saudara/i, berkenan hadir untuk memberikan doa restu kepada kedua mempelai. Atas kehadiran dan doa restu Bapak/ibu/sdaura/i kami ucapkan terima kasih</p> -->
 		  
 		    <p class="ucapan_thx"> Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. Dan jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi kado secara cashless.</p>
-          <img src="assets/img/font_footer.png" class="img-fluid " width="15%"></br></br>
+          <img src="assets/img/font_footer.webp" class="img-fluid mb-4" width="15%">
+            <div class="row">
+              <div class="col-md-4 col-12 d-flex align-items-stretch justify-content-center">
+                  <!-- <img src="assets/img/dana.webp" class="img-fluid mb-3" width="20%" alt=""> -->
+              </div>
+              <div class="col-md-4 col-12 d-flex align-items-stretch justify-content-center">
+                  <img src="assets/img/dana.webp" class="img-fluid mb-3" width="20%" alt="">
+              </div>
+              <div class="col-md-4 col-12 d-flex align-items-stretch justify-content-center">
+                  <!-- <img src="assets/img/dana.webp" class="img-fluid mb-3" width="20%" alt=""> -->
+              </div>
+            </div>
+          <h6 class="ucapan_thx"> Scan QRIS DANA dibawah dengan e-Wallet anda</h6>
           <div class="row">
             <div class="col-md-4 col-12 d-flex align-items-stretch  justify-content-center">
-              <img src="assets/img/qris_bca.png" class="img-fluid mb-3" width="50%" alt="">
+              <!-- <img src="assets/img/qris_bca.png" class="img-fluid mb-3" width="50%" alt=""> -->
             </div>
-            <div class="col-md-4 col-12 d-flex align-items-stretch  justify-content-center">
-              
+
+            <div class="col-md-4 col-12 d-flex align-items-stretch  justify-content-center mb-3">
+                <img src="assets/img/qris_dana.png" class="img-fluid mb-3" width="50%" alt="">
             </div>
-            <div class="col-md-4 col-12 d-flex align-items-stretch  justify-content-center">
-              <img src="assets/img/qris_dana.png" class="img-fluid mb-3" width="50%" alt="">
+        
+            <div class="col-md-4  d-flex align-items-stretch  justify-content-center">
+              <!-- <img src="assets/img/qris_dana.png" class="img-fluid mb-3" width="50%" alt=""> -->
             </div>
           </div>
-          <!-- <a class="cta-btn" href="#">Call To Action</a> -->
-        </div>
+          <div class="row">
+              <div class="col-md-4 col-12 d-flex align-items-stretch justify-content-center">
+                  <!-- <img src="assets/img/dana.webp" class="img-fluid mb-3" width="20%" alt=""> -->
+              </div>
+              <div class="col-md-4 col-12 d-flex align-items-stretch justify-content-center">
+                  <img src="assets/img/bca.webp" class="img-fluid mb-3" width="20%" alt="">
+              </div>
+              <div class="col-md-4 col-12 d-flex align-items-stretch justify-content-center">
+                  <!-- <img src="assets/img/dana.webp" class="img-fluid mb-3" width="20%" alt=""> -->
+              </div>
+            </div>
+          <img src="assets/img/font_footer.webp" class="img-fluid mb-4" width="15%">
+          <div class="">
+              <h6 class="ucapan_thx" id="input" value="1530476321"> No. Rekening : 1530476321</h6>
+              <h6 class="ucapan_thx"> A/n Desy Lidawati</h6>
+              <input type="button" class="btn btn-outline-warning mt-3" id="button" value="Copy Rekening">
+          </div>
+        </div> 
 
       </div>
     </section><!-- End Cta Section -->
@@ -246,7 +277,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
                   <p>Kebayanan II, Ngebung, Kec. Kalijambe, Kabupaten Sragen, Jawa Tengah 57275</p>
                   <a href="https://goo.gl/maps/cn5HPhVDXAfDeS6y7" class="btn btn-outline-warning mt-3" target="_blank"> Location</a>
                   <!-- <a href="#services" class="btn-get-started scrollto">Get Started</a> -->
-                  <!-- <img src="assets/img/hero.png" class="image_fluid" width="90%" alt=""> -->
+                  <!-- <img src="assets/img/hero.webp" class="image_fluid" width="90%" alt=""> -->
                 </div>
               </div>
               
@@ -255,7 +286,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
           </div>
 
           <div class="col-lg-6 mx-auto d-block">
-            <form id="myform" action="http://sofyan.test/dashboard.php" method="POST" class="php-email-form">
+            <form id="myform" action="<?= $url . 'dashboard.php'; ?>" method="POST" class="php-email-form">
               <h4>Isi Pesan Disini</h4>
               <div class="form-row">
                 <div class="col-md-6 form-group">
@@ -290,18 +321,20 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
         </div>
 
         <div class="owl-carousel testimonials-carousel">
-        <?php foreach ($list as $row) : ?>
-          <div class="testimonial-item">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              <?= $row["pesan"]; ?>
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-6.png" class="testimonial-img" alt="">
-            <h3><?= $row["nama"]; ?></h3>
-            <h4><?= $row["alamat"]; ?></h4>
-          </div>
-        <?php endforeach; ?>
+        <?php if(!empty($list)) : ?>
+          <?php foreach ($list as $row) : ?>
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                <?= $row["pesan"]; ?>
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="assets/img/testimonials/testimonials-6.png" class="testimonial-img" alt="">
+              <h3><?= $row["nama"]; ?></h3>
+              <h4><?= $row["alamat"]; ?></h4>
+            </div>
+          <?php endforeach; ?>
+        <?php endif; ?>
         </div>
 
       </div>
@@ -316,11 +349,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
           <!--<p class="ucapan_thx"> Merupakan Suatu Kehormatan bagi kami apabila Bapak/Ibu/Saudara/i, berkenan hadir untuk memberikan doa restu kepada kedua mempelai. Atas kehadiran dan doa restu Bapak/ibu/sdaura/i kami ucapkan terima kasih</p> -->
 		  
 		    <p class="ucapan_thx"> Dikarenakan sedang dalam masa pandemi, tanpa mengurangi rasa hormat, diharapkan seluruh tamu dapat mengikuti protokol kesehatan yang dianjurkan oleh pemerintah</p>
-          <img src="assets/img/font_footer.png" class="img-fluid " width="15%"></br></br>
+          <img src="assets/img/font_footer.webp" class="img-fluid " width="15%"></br></br>
         
         <div class="col-md-12 col-12 d-flex">
-          <!-- <img src="assets/img/weding.png" class="img-fluid mb-3" width="50%" alt=""> -->
-          <img src="assets/img/corona.png" class="img-fluid " width="100%">
+          <!-- <img src="assets/img/weding.webp" class="img-fluid mb-3" width="50%" alt=""> -->
+          <img src="assets/img/corona.webp" class="img-fluid " width="100%">
         </div>
           <!-- <a class="cta-btn" href="#">Call To Action</a> -->
         </div>
@@ -379,6 +412,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/auto_scroll.js"></script>
+
+  <script>
+    document.querySelector("#button").click = function() {
+      document.querySelector("#input").select();
+      document.execCommand('copy');
+    }
+  </script>
 
   <script>
 

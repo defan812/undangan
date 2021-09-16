@@ -40,7 +40,7 @@
 					</span>
 					
 					<div class="text-center">
-						<img src="assets/img/weding2.png" class="img-fluid mb-3" width="65%" alt="">
+						<img src="assets/img/weding2.webp" class="img-fluid mb-3" width="65%" alt="">
 					</div>
 
 					<span class="login102-form-title mb-5">
