@@ -418,7 +418,8 @@ section {
 }
 
 .section-bg {
-  background-color: #f7f8fa;
+  /* background-color: #f7f8fa; */
+  background: linear-gradient(to right, #D0E8D3, #F9D3D4);
 }
 
 .section-title {
@@ -1566,4 +1567,8 @@ section {
   50%  { left:0px; top:1000px;}
   
   100% { left:0px; top:0px;}
+}
+
+.padding {
+  padding: 10, 10, 10, 10;
 }

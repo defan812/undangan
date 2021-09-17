@@ -16,7 +16,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
   {
     $message = [
       'nama' => $_POST['nama'],
-      'alamat' => $_POST['alamat'],
+      // 'alamat' => $_POST['alamat'],
       'pesan' => $_POST['pesan'],
     ];
 
@@ -127,62 +127,76 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     <section id="services" class="services team section-bg">
       <div class="container">
 
-        <div class="section-title">
-        <div class="row">
-        <div class="col-md-4 col-12 d-flex align-items-stretch  text-align-center">
-          
-        </div>
-        <div class="col-md-4 col-12 d-flex align-items-stretch  justify-content-center">
-          <img src="assets/img/salam.webp" class="img-fluid mb-3" width="50%" alt="">
-        </div>
-        <div class="col-md-4 col-12 d-flex align-items-stretch  text-align-center">
-          
-        </div>
-      </div>
-          <!-- <h2> <img src="assets/img/salam.webp" class="img-fluid mx-auto d-block" width="25%"></h2> -->
-          <h5 class="mb-3">Dengan memohon Ridho dan rahmat Allah SWT, kami bermaksud menyelenggarakan Akad Nikah dan Pernikahan kami yang InsyaAllah akan dilaksanakan pada :</h5>
-          <h5> <b> Hari Ahad,17 Oktober 2021 </b> </h5>
-          <h5> <b>Pukul : 09.00 WIB s/d Selesai </b></h5>
-          <h5 class="mb-5"> <b>Tempat : Desa Ngebung Rt 003 / RW 002 Ngebung, Kalijambe, Sragen </b></h5> 
+          <div class="section-title">
+            <h2>The wedding Of</h2>
+          </div>
 
-          <h5>Yang Bernama :</h5>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-8 d-flex align-items-stretch mx-auto d-block" data-aos="zoom-in" data-aos-delay="100">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/ds.webp" class="img-fluid " alt="">
-                <div class="social">
-                  <!-- <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a> -->
-                  <a href="https://www.instagram.com/desylindaw/" target="_blank"><i class="icofont-instagram"></i></a>
-                  <!-- <a href=""><i class="icofont-linkedin"></i></a> -->
+            <div class="row mt-5">
+              <div class="col-lg-4 col-md-8 d-flex align-items-stretch mx-auto d-block" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/ds.webp" class="img-fluid " alt="">
+                    <div class="social">
+                      <!-- <a href=""><i class="icofont-twitter"></i></a>
+                      <a href=""><i class="icofont-facebook"></i></a> -->
+                      <a href="https://www.instagram.com/desylindaw/" target="_blank"><i class="icofont-instagram"></i></a>
+                      <!-- <a href=""><i class="icofont-linkedin"></i></a> -->
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h1 class="wedding">Desy Lindawati</h1>
+                    <span>Putri Dari Bapak Suliman dan Ibu Sutinah</span>
+                    <!-- <span>Ngebung Rt 003 / RW 002 Ngebung, Kalijambe, Sragen</span> -->
+                  </div>
                 </div>
               </div>
-              <div class="member-info">
-                <h1 class="wedding">Rr. Desy Lindawati</h1>
-                <span>Putri Dari Bapak Suliman dan Ibu Sutinah</span>
-                <!-- <span>Ngebung Rt 003 / RW 002 Ngebung, Kalijambe, Sragen</span> -->
+              <div class="col-lg-4 col-md-8 d-flex align-items-stretch mx-auto d-block" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/sd.webp" class="img-fluid" alt="">
+                    <div class="social">
+                      <!-- <a href=""><i class="icofont-twitter"></i></a>
+                      <a href=""><i class="icofont-facebook"></i></a> -->
+                      <a href="https://www.instagram.com/sofyanardy12/" target="_blank"><i class="icofont-instagram"></i></a>
+                      <!-- <a href=""><i class="icofont-linkedin"></i></a> -->
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h1 class="wedding">Sofyan Ardi Wibowo</h1>
+                    <span>Putra Dari Bapak Pariyo dan Ibu Wagiyem</span>
+                    <!-- <span>Nanggulan Rt 002 / Rw 007 Gentan, Bendosari, Sukoharjo</span> -->
+                  </div>
               </div>
             </div>
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>SAVE DATE</h2>
+          <p>Dengan memohon Ridho dan rahmat Allah SWT, kami bermaksud menyelenggarakan Akad Nikah dan Resepsi Pernikahan kami yang InsyaAllah akan dilaksanakan pada :</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 col-md-12 d-flex align-items-stretch justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              <h1 class="wedding">Akad</h1>
+              <h5> <b> Hari Ahad, 17 Oktober 2021 </b> </h5>
+              <h5> <b>Pukul 08.00 WIB s/d Selesai </b></h5>
+              <p>Desa Ngebung Rt 003 / RW 002 Ngebung, Kalijambe, Sragen </p>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-8 d-flex align-items-stretch mx-auto d-block" data-aos="zoom-in" data-aos-delay="100">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/sd.webp" class="img-fluid" alt="">
-                <div class="social">
-                  <!-- <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a> -->
-                  <a href="https://www.instagram.com/sofyanardy12/" target="_blank"><i class="icofont-instagram"></i></a>
-                  <!-- <a href=""><i class="icofont-linkedin"></i></a> -->
-                </div>
-              </div>
-              <div class="member-info">
-                <h1 class="wedding">Bg. Sofyan Ardi Wibowo</h1>
-                <span>Putra Dari Bapak Pariyo dan Ibu Wagiyem</span>
-                <!-- <span>Nanggulan Rt 002 / Rw 007 Gentan, Bendosari, Sukoharjo</span> -->
-              </div>
+
+          <div class="col-lg-6 col-md-12 d-flex align-items-stretch mt-4 mt-md-0 justify-content-center" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-orange ">
+              <h1 class="wedding">Resepsi</h1>
+              <h5> <b> Hari Ahad, 17 Oktober 2021 </b> </h5>
+              <h5> <b>Pukul 10.00 WIB s/d Selesai </b></h5>
+              <p>Desa Ngebung Rt 003 / RW 002 Ngebung, Kalijambe, Sragen </p>
             </div>
           </div>
 
@@ -204,18 +218,19 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
           <!--<p class="ucapan_thx"> Merupakan Suatu Kehormatan bagi kami apabila Bapak/Ibu/Saudara/i, berkenan hadir untuk memberikan doa restu kepada kedua mempelai. Atas kehadiran dan doa restu Bapak/ibu/sdaura/i kami ucapkan terima kasih</p> -->
 		  
 		    <p class="ucapan_thx"> Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. Dan jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi kado secara cashless.</p>
-          <img src="assets/img/font_footer.webp" class="img-fluid mb-4" width="15%">
+          <img src="assets/img/font_footer.webp" class="img-fluid mb-5" width="15%">
             <div class="row">
               <div class="col-md-4 col-12 d-flex align-items-stretch justify-content-center">
                   <!-- <img src="assets/img/dana.webp" class="img-fluid mb-3" width="20%" alt=""> -->
               </div>
-              <div class="col-md-4 col-12 d-flex align-items-stretch justify-content-center">
+              <div class="col-md-4 col-12 d-flex align-items-stretch justify-content-center mt-5">
                   <img src="assets/img/dana.webp" class="img-fluid mb-3" width="20%" alt="">
               </div>
               <div class="col-md-4 col-12 d-flex align-items-stretch justify-content-center">
                   <!-- <img src="assets/img/dana.webp" class="img-fluid mb-3" width="20%" alt=""> -->
               </div>
             </div>
+            <img src="assets/img/font_footer.webp" class="img-fluid mb-4" width="15%">
           <h6 class="ucapan_thx"> Scan QRIS DANA dibawah dengan e-Wallet anda</h6>
           <div class="row">
             <div class="col-md-4 col-12 d-flex align-items-stretch  justify-content-center">
@@ -223,13 +238,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
             </div>
 
             <div class="col-md-4 col-12 d-flex align-items-stretch  justify-content-center mb-3">
-                <img src="assets/img/qris_dana.png" class="img-fluid mb-3" width="50%" alt="">
+                <img src="assets/img/qris_dana.png" class="img-fluid mb-5" width="50%" alt="">
             </div>
         
             <div class="col-md-4  d-flex align-items-stretch  justify-content-center">
               <!-- <img src="assets/img/qris_dana.png" class="img-fluid mb-3" width="50%" alt=""> -->
             </div>
           </div>
+
           <div class="row">
               <div class="col-md-4 col-12 d-flex align-items-stretch justify-content-center">
                   <!-- <img src="assets/img/dana.webp" class="img-fluid mb-3" width="20%" alt=""> -->
@@ -242,10 +258,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
               </div>
             </div>
           <img src="assets/img/font_footer.webp" class="img-fluid mb-4" width="15%">
-          <div class="">
-              <h6 class="ucapan_thx" id="input" value="1530476321"> No. Rekening : 1530476321</h6>
+          <div class="text-center">
+              <h6 class="ucapan_thx"> No. Rekening </h6>
+              <div class="col-lg-3 mx-auto d-block">
+                <div class="col-md-12 form-group">
+                  <input type="text" class="form-control " id="pilih" placeholder="Alamat" value="1530476321" readonly/>
+                </div>
+              </div>
               <h6 class="ucapan_thx"> A/n Desy Lidawati</h6>
-              <input type="button" class="btn btn-outline-warning mt-3" id="button" value="Copy Rekening">
+              <button type="button" class="btn btn-outline-warning mt-3" onclick="copy_text()">Copy Rekening</button>
           </div>
         </div> 
 
@@ -259,7 +280,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 
         <div class="section-title">
           <h2>Buku Tamu</h2>
-          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
         </div>
 
         <div class="row">
@@ -289,14 +309,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
             <form id="myform" action="<?= $url . 'dashboard.php'; ?>" method="POST" class="php-email-form">
               <h4>Isi Pesan Disini</h4>
               <div class="form-row">
-                <div class="col-md-6 form-group">
+                <div class="col-md-12 form-group">
                   <input type="text" name="nama" class="form-control" id="nama" placeholder="Nama" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required/>
                 </div>
-                <div class="col-md-6 form-group">
+                <!-- <div class="col-md-6 form-group">
                   <input type="text" class="form-control" name="alamat" id="alamat" placeholder="Alamat" data-msg="Please enter a valid email" required/>
-                </div>
+                </div> -->
               </div>
-              <div class="form-group">
+              <div class="form-group text-center">
                 <textarea class="form-control" name="pesan" rows="7" data-rule="required" data-msg="Please write something for us" placeholder="Pesan Buat Mempelai" required></textarea>
               </div>
               <div class="text-center submit">
@@ -331,7 +351,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
               </p>
               <img src="assets/img/testimonials/testimonials-6.png" class="testimonial-img" alt="">
               <h3><?= $row["nama"]; ?></h3>
-              <h4><?= $row["alamat"]; ?></h4>
+              <!-- <h4><?= $row["alamat"]; ?></h4> -->
             </div>
           <?php endforeach; ?>
         <?php endif; ?>
@@ -413,12 +433,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
   <script src="assets/js/main.js"></script>
   <script src="assets/js/auto_scroll.js"></script>
 
-  <script>
-    document.querySelector("#button").click = function() {
-      document.querySelector("#input").select();
-      document.execCommand('copy');
+  <script type="text/javascript">
+    function copy_text() {
+        document.getElementById("pilih").select();
+        document.execCommand("copy");
+        // alert("Text berhasil dicopy");
     }
-  </script>
+</script>
 
   <script>
 

@@ -49,6 +49,7 @@
 body, html {
 	height: 100%;
 	font-family: Ubuntu-Regular, sans-serif;
+  background: linear-gradient(to right, #D0E8D3, #F9D3D4);
 }
 
 /*---------------------------------------------*/
@@ -181,6 +182,7 @@ iframe {
 .limiter {
   width: 100%;
   margin: 0 auto;
+
 }
 
 .container-login100 {
@@ -196,7 +198,7 @@ iframe {
   align-items: center;
   padding: 15px;
   position: relative;
-  background-color: #fff;
+  background: linear-gradient(to right, #D0E8D3, #F9D3D4);
 }
 
 .wrap-login100 {
