@@ -203,7 +203,7 @@ iframe {
 
 .wrap-login100 {
   width: 400px;
-  background: rgb(255, 219, 102);
+  background: linear-gradient(to bottom, #D0E8D3, #F9D3D4);
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
@@ -234,7 +234,7 @@ iframe {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgb(255, 219, 102);
+  /* background-color: rgb(255, 219, 102); */
   /* padding-top: 10px;
   padding-bottom: 09px; */
 }
@@ -250,7 +250,7 @@ iframe {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgb(255, 219, 102);
+  /* background-color: rgb(255, 219, 102); */
   /* padding-top: 10px;
   padding-bottom: 09px; */
 }
@@ -266,7 +266,7 @@ iframe {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgb(255, 219, 102);
+  /* background-color: rgb(255, 219, 102); */
   /* padding-top: 10px;
   padding-bottom: 09px; */
 }
