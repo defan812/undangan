@@ -265,7 +265,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
                   <input type="text" class="form-control " id="pilih" placeholder="Alamat" value="1530476321" readonly/>
                 </div>
               </div>
-              <h6 class="ucapan_thx"> A/n Desy Lidawati</h6>
+              <h6 class="ucapan_thx"> A/n Desy Lindawati</h6>
               <button type="button" class="btn btn-outline-warning mt-3" onclick="copy_text()">Copy Rekening</button>
           </div>
         </div> 
