@@ -295,7 +295,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
                   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d494.52606054791926!2d110.836378!3d-7.4421704!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a0f4c7f281967%3A0xe383af98f0cc2b29!2sWedding%20Desy%20dan%20Sofyan!5e0!3m2!1sid!2sid!4v1620099377350!5m2!1sid!2sid" width="90%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
                   <p>Kebayanan II, Ngebung, Kec. Kalijambe, Kabupaten Sragen, Jawa Tengah 57275</p>
-                  <a href="https://goo.gl/maps/cn5HPhVDXAfDeS6y7" class="btn btn-outline-warning mt-3" target="_blank"> Location</a>
+                  <a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d494.52606054791926!2d110.836378!3d-7.4421704!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a0f4c7f281967%3A0xe383af98f0cc2b29!2sWedding%20Desy%20dan%20Sofyan!5e0!3m2!1sid!2sid!4v1620099377350!5m2!1sid!2sid" class="btn btn-outline-warning mt-3" target="_blank"> Location</a>
                   <!-- <a href="#services" class="btn-get-started scrollto">Get Started</a> -->
                   <!-- <img src="assets/img/hero.webp" class="image_fluid" width="90%" alt=""> -->
                 </div>
