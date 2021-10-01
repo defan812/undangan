@@ -1,5 +1,5 @@
 <?php
-$url  = "http://localhost:8080/wedding/";
+$url  = "https://wedding.das-p.web.id/";
 $data = file_get_contents('assets/js/list.json');
 $list = json_decode($data, true);
 $list = $list["list"];
