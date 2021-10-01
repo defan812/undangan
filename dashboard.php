@@ -292,10 +292,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
                   <i class="bx bx-map"></i>
                   <h3>Our Address</h3>
 
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d494.52606054791926!2d110.836378!3d-7.4421704!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a0f4c7f281967%3A0xe383af98f0cc2b29!2sWedding%20Desy%20dan%20Sofyan!5e0!3m2!1sid!2sid!4v1620099377350!5m2!1sid!2sid" width="90%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d494.52606054791926!2d110.836378!3d-7.4421704!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a0f4c7f281967%3A0xe383af98f0cc2b29!2sWedding%20Desy%20dan%20Sofyan!5e0!3m2!1sid!2sid!4v1620099377350!5m2!1sid!2sid" width="90%" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1604.4014602302702!2d110.83576464771957!3d-7.44216653879736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x31cee8a5d92de39c!2sThe%20Wedding%20of%20Desy%20dan%20Sofyan!5e0!3m2!1sen!2sid!4v1633053085411!5m2!1sen!2sid" width="90%"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
                   <p>Kebayanan II, Ngebung, Kec. Kalijambe, Kabupaten Sragen, Jawa Tengah 57275</p>
-                  <a href="https://goo.gl/maps/2VXxLTSxhafcRHFJA" class="btn btn-outline-warning mt-3" target="_blank"> Location</a>
+                  <a href="https://maps.google.com/?cid=3589061752071775132&entry=gps" class="btn btn-outline-warning mt-3" target="_blank"> Location</a>
                   <!-- <a href="#services" class="btn-get-started scrollto">Get Started</a> -->
                   <!-- <img src="assets/img/hero.webp" class="image_fluid" width="90%" alt=""> -->
                 </div>
